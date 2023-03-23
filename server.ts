@@ -10,10 +10,11 @@ server.use(express.urlencoded({ extended: true }));
 
 server.engine("hbs", engine({ extname: ".hbs" }));
 server.set("view engine", "hbs");
-server.set("views", "./views");
+server.set("views", "./pages");
 
 server.get("/", (req, res) => {});
 const PORT = process.env.PORT || 1112;
 server.listen(PORT, () => console.log(`server running on port  ${PORT}`));
 
 // git checkout -B template
+// git checkout -B 'name'
