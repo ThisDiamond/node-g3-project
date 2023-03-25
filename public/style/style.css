@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  width: 800px;
+  height: 90vh;
+  margin-top: 2%;
+  padding: 25px 35px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  color: #252525;
+  font-size: larger;
+  margin: 0;
+}
+header a {
+  display: inline-block;
+  background-color: #252525;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+form input {
+  background-color: #e5e5e5;
+  border: 0;
+  outline: 0;
+  padding: 12px 20px;
+}
+form button {
+  align-self: flex-end;
+  background-color: #252525;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+  border: 0;
+  border-radius: 2px;
+}
+form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 180px;
+  max-height: 70vh;
+  background-color: #e5e5e5;
+  border: 0;
+  outline: 0;
+  padding: 12px 20px;
+}
+.post {
+  border-bottom: 1px solid #d6d6d6;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.author {
+  color: #1d7fef;
+}
+.content {
+  color: #252525;
+}
+.date {
+  align-self: flex-end;
+}
+.delete {
+  align-self: flex-end;
+  width: inherit;
+  display: block;
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+}

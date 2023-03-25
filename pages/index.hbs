@@ -1,0 +1,20 @@
+<main>
+  <header>
+    <h1>Posts</h1>
+    <a href="/add-post">Add post</a>
+  </header>
+  {{#if posts}}
+    {{#each posts}}
+      <div class="post">
+        <span class="author">{{nickname}}</span>
+        <p class="content">
+          {{content}}
+        </p>
+        <span class="date">{{date}}</span>
+        <a href="/delete/{{id}}" class="delete">Delete</a>
+      </div>
+    {{/each}}
+  {{else}}
+    <p>No posts</p>
+  {{/if}}
+</main>
